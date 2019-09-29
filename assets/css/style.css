@@ -1,0 +1,166 @@
+:root {
+  --mainColor: #bd070e;
+  --textColor: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.headerNews {
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  font-size: 14px;
+  height: 30px;
+}
+.headerNews .container{
+  position: relative;
+}
+.headerNews .container .newsSection {
+  width: 85%;
+  float: left;
+  line-height: 30px;
+}
+.headerNews .container .newsSection .newsTitle {
+  width: 15%;
+  float: left;
+}
+.headerNews .container .newsSection .newsTitle h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 19px;
+}
+.headerNews .container .newsSection .newsTitle h4 i{
+  font-size: 15px;
+  padding-left: 5px
+}
+.headerNews .container .newsSection .news {
+  width: 85%;
+  float: left;
+}
+.headerNews .container .socialIcon{
+  text-align: right;
+  width: 15%;
+  float:left;
+}
+.header{
+  height: 120px;
+  margin-top: 30px;
+}
+.header .container .headerLeft{
+  width:40%;
+  float: left;
+}
+.header .container .logo{
+  width:20%;
+  float: left;
+}
+.header .container .headerRight{
+  width:40%;
+  float: left;
+}
+.header .container .headerLeft li{
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+.header .container .headerLeft ul li a{
+  color: #8a8a8a;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header .container .headerLeft ul li a:hover{
+  color:#bd070e;
+}
+.header .container .headerLeft ul li::after{
+  position: absolute;
+  content: '';
+  width:8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bfbebe;
+  left: -3px;
+  top: 5px;
+}
+.header .container .headerLeft a.fbClubBtn{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #bd070e;
+  padding: 5px 10px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 6px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.header .container .logo{
+  text-align: center;
+}
+.header .container .headerRight{
+  text-align: right;
+}
+.header .container .headerRight p i{
+  color: #bfbebe;
+}
+.header .container .headerRight p span{
+  font-size: 16px;
+  color: #bd070e;
+  font-weight: bold;
+}
+.header .container .headerRight>span{
+  margin-top: 20px;
+  display: block;
+}
+.header .container .searchBox{
+  margin-top: 20px;
+  position: relative;
+}
+.header .container .searchBox input{
+  border: none;
+  outline: none;
+  padding: 8px 5px;
+  width: 40%;
+  transition: .5s;
+}
+.header .container .searchBox input:hover,
+.header .container .searchBox input:focus{
+  background-color:#f2f2f2;
+  width: 50%;
+}
+.header .container .searchBox button{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  transition: .5s;
+  border:none;
+  background:none;
+  cursor: pointer;
+}
+.header .container .searchBox input:hover +  button,
+.header .container .searchBox input:focus +  button,
+.header .container .searchBox button:hover{
+  color:#bd070e;
+}
+.menuAndBannerSection{
+  
+}
