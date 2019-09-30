@@ -140,7 +140,7 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: none;
   padding: 8px 5px;
   width: 40%;
-  transition: .5s;
+  transition: all linear .5s;
 }
 .header .container .searchBox input:hover,
 .header .container .searchBox input:focus{
@@ -151,7 +151,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   right: 10px;
   top: 8px;
-  transition: .5s;
+  transition: all linear .3s;
   border:none;
   background:none;
   cursor: pointer;
@@ -162,5 +162,106 @@ input[type="search"]::-webkit-search-results-decoration {
   color:#bd070e;
 }
 .menuAndBannerSection{
-  
+  position: relative;
+  margin-top: 20px;
+  height: 450px;
+}
+.menuAndBannerSection .menu{
+  background-color: rgba(0,0,0,0.6);
+  height: 50px;
+}
+.menuAndBannerSection .menu .container .leftMenu{
+  width: 80%;
+  float:left;
+  line-height: 50px;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li{
+  float: left;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li a{
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  outline: 0;
+  border-right: 1px solid #fff;
+  transition: all linear .3s;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li:last-child a{
+  border: 0;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li a:hover{
+  background-color: #bd070e;
+}
+.menuAndBannerSection .menu .container .rightButton{
+  width: 20%;
+  float:left;
+  text-align: center;
+}
+.menuAndBannerSection .menu .container .rightButton a{
+  display: inline-block;
+  padding: 6px 50px;
+  background-color: #bd070e;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 10px 0;
+  transition: all linear .3s;
+}
+.menuAndBannerSection .menu .container .rightButton a:hover{
+  background-color: #c9151c;
+}
+.menuAndBannerSection .banner{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -999999;
+}
+.menuAndBannerSection .banner img{
+  width:100%;
+  height: auto;
+}
+.crseAndSmnr{
+  margin-top: 70px;
+}
+.crseAndSmnr .container .course{
+  width: 49%;
+  float: left;
+}
+.crseAndSmnr .container .seminar{
+  width: 49%;
+  float: right;
+}
+.crseAndSmnr .container .course h2.heading,
+.crseAndSmnr .container .seminar h2.heading{
+  background-color: #bd070e;
+  color: #fff;
+  padding: 5px 20px;
+}
+.crseAndSmnr .container .course .courseImg .courseImgBox{
+  width:25%;
+  float:left;
+  font-size: 0;
+  position: relative;
+}
+.crseAndSmnr .container .course .courseImg .courseImgBox a img{
+  width:100%;
+  height: 100%;
+}
+
+.crseAndSmnr .container .course .courseImg .courseImgBox a img:last-child{
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+.crseAndSmnr .container .course .courseImg .courseImgBox a:hover img:last-child{
+  display: block;
+}
+.crseAndSmnr .container .seminar .seminarImg img{
+  width:100%;
+  height: 100%;
 }
