@@ -251,6 +251,9 @@ input[type="search"]::-webkit-search-results-decoration {
 .menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li:hover > a{
   background-color: #ededed;
 }
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li:hover > a .crseDes h4{
+  color: #bd070e;
+}
 .menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseIcon{
   width:65px;
   height: 100%;
@@ -295,7 +298,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .menuAndBannerSection .menu .container .leftMenu ul li ul li:last-child a{
   border-radius: 0 0 5px 5px;
 }
-.menuAndBannerSection .menu .container .leftMenu ul li ul li:hover a{
+.menuAndBannerSection .menu .container .leftMenu ul li ul > li:hover a{
   color: #fff;
   padding-left: 15px;
 }
