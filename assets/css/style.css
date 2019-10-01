@@ -141,6 +141,7 @@ input[type="search"]::-webkit-search-results-decoration {
   padding: 8px 5px;
   width: 40%;
   transition: all linear .5s;
+  -webkit-transition: all linear .5s;
 }
 .header .container .searchBox input:hover,
 .header .container .searchBox input:focus{
@@ -152,6 +153,7 @@ input[type="search"]::-webkit-search-results-decoration {
   right: 10px;
   top: 8px;
   transition: all linear .3s;
+  -webkit-transition: all linear .3s;
   border:none;
   background:none;
   cursor: pointer;
@@ -177,6 +179,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .menuAndBannerSection .menu .container .leftMenu ul li{
   float: left;
+  position: relative;
 }
 .menuAndBannerSection .menu .container .leftMenu ul li a{
   display: block;
@@ -188,12 +191,113 @@ input[type="search"]::-webkit-search-results-decoration {
   outline: 0;
   border-right: 1px solid #fff;
   transition: all linear .3s;
+  -webkit-transition: all linear .3s;
 }
 .menuAndBannerSection .menu .container .leftMenu ul li:last-child a{
   border: 0;
 }
-.menuAndBannerSection .menu .container .leftMenu ul li a:hover{
+.menuAndBannerSection .menu .container .leftMenu ul li:hover > a{
   background-color: #bd070e;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul{
+  position: absolute;
+  width: 200px;
+  background-color: #fff;
+  z-index: 99;
+  border-radius: 0 0 5px 5px;
+  margin-top:50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all linear .4s;
+  -webkit-transition: all linear .4s;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li:hover > ul{
+  margin-top:0px;
+  opacity: 1;
+  visibility: visible;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul::before{
+  position: absolute;
+  content: '';
+  left: 20px;
+  top: -10px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu{
+  width: 890px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li{
+  width: 270px;
+  height: 70px;
+  float: left;
+  background: #fff;
+  margin: 10px;
+  border: 1px solid #ededed;
+  overflow: hidden;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a{
+  padding: 0;
+  color: #000;
+  display: block;
+  height: 100%;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li:hover > a{
+  background-color: #ededed;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseIcon{
+  width:65px;
+  height: 100%;
+  line-height: 70px;
+  float: left;
+  background-color: #ededed;
+  text-align: center;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseIcon img{
+  vertical-align: middle;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseDes{
+  width:200px;
+  float: left;
+  padding-left: 10px;
+  line-height: initial;
+  letter-spacing: initial;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseDes h4{
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px auto;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul .crseMegaMenu li a div.crseDes p{
+  font-size: 11px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul li{
+  width:100%;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul li a{
+  border-right: none;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px;
+  line-height: initial;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul li:last-child a{
+  border-radius: 0 0 5px 5px;
+}
+.menuAndBannerSection .menu .container .leftMenu ul li ul li:hover a{
+  color: #fff;
+  padding-left: 15px;
 }
 .menuAndBannerSection .menu .container .rightButton{
   width: 20%;
@@ -210,6 +314,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border-radius: 5px;
   margin: 10px 0;
   transition: all linear .3s;
+  -webkit-transition: all linear .3s;
 }
 .menuAndBannerSection .menu .container .rightButton a:hover{
   background-color: #c9151c;
@@ -251,7 +356,6 @@ input[type="search"]::-webkit-search-results-decoration {
   width:100%;
   height: 100%;
 }
-
 .crseAndSmnr .container .course .courseImg .courseImgBox a img:last-child{
   position: absolute;
   left: 0;
